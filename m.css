@@ -1,0 +1,104 @@
+{
+  margin: 0;
+  padding: 0;
+}
+
+
+.bg{
+  width:100%;
+  background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url("ima/nature-tranquil-beauty-reflected-calm-water-generative-ai_188544-12798.avif");
+  background-size: cover;
+  background-position: center;
+  height: 109vh;
+}
+.nv{
+  width: 1200px;
+  height:75px;
+  margin: auto;
+
+}
+.icon{
+  width: 200px;
+  height: 70px;
+  float: left;
+}
+.logo{
+  color: orangered;
+  font-size:35px;
+  font-family: arial;
+  padding-top:4px;
+  float: left;
+  margin-left:-80px ;
+}
+
+.menu{
+  width: 400px;
+  height: 70px;
+  float: left;
+}
+ ul{
+  float: left;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  
+}
+ul li{
+  list-style: none;
+  margin-left:62px ;
+  margin-top:27px ;
+  font-size:14px ;
+}
+ul li a{
+  text-decoration: none;
+  color: #fff;
+  font-family: arial;
+  font-weight:bold ;
+  transition: 0.4s ease-in-out;
+}
+ul li a:hover{
+  color: orangered;
+  transform: scale(1.2);
+  text-underline-position: auto;
+}
+
+.c{
+  
+  width: 330px;
+  float: left;
+  margin-left:270px ;
+
+  
+}
+.sing_in{
+  background-color: whitesmoke;
+   border: 1px solid #e9eee7;
+   color: #0d0d0d;
+   font-size: 10px;
+   font-weight: bold;
+   padding: 11px;
+   margin-top: 24px;
+    margin-right: 50px;
+    padding-left:40px ;
+    padding-right:40px ;
+   cursor: pointer;
+    border-bottom-left-radius:40px ;
+ border-bottom-right-radius:40px ;
+ border-top-left-radius:40px ;
+  border-top-right-radius:40px ;
+}
+.log_in{
+  background-color: black;
+   border: 1px solid #121312;
+   color: #fff;
+   font-size: 13px;
+   font-weight: bold;
+   padding: 16px;
+   margin-top: 24px;
+   cursor: pointer;
+    border-bottom-left-radius:20px ;
+ border-bottom-right-radius:20px ;
+ border-top-left-radius:20px ;
+  border-top-right-radius:20px ;
+
+}
