@@ -558,11 +558,16 @@ footer{
 
 
 
-
+.important{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin-top: 100px;
+}
 .poster{
 justify-content:center;
   align-items: center;
-margin-left:500px ;
+margin-left:00px ;
   position:center;
   width: 480px;
   background:
