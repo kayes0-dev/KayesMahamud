@@ -563,11 +563,11 @@ footer{
   align-items:center;
   justify-content:center;
   margin-top: 100px;
+  position:center;
 }
 .poster{
 justify-content:center;
   align-items: center;
-margin-left:00px ;
   position:center;
   width: 480px;
   background:
