@@ -1,5 +1,5 @@
 // ---- Typing effect for role ----
-const roles = ["Web Developer", "Frontend Developer", "UI Designer"];
+const roles = ["Full Stack Web Developer", "WordPress Developer", "HTML, CSS, JS,PHP & Laravel Developer"];
 const typedEl = document.getElementById('typed');
 let roleIndex = 0, charIndex = 0, deleting = false;
 
