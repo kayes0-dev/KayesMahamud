@@ -17,6 +17,7 @@ body{
   color: var(--text);
   font-family: var(--font);
   overflow-x:hidden;
+  width:auto;
 }
 
 a{ text-decoration:none; color:inherit; }
