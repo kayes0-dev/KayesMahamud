@@ -19,10 +19,20 @@ body{
   padding:40px 16px;
 }
 
+.wrapper{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  width:100%;
+  max-width:850px;
+  min-width:0;
+}
+
 .page{
   background:var(--paper);
-  width:850px;
-  max-width:100%;
+  width:100%;
+  max-width:850px;
+  min-width:0;
   padding:48px 56px 56px;
   box-shadow:0 8px 30px rgba(0,0,0,0.12);
 }
@@ -196,8 +206,64 @@ ul.bullets li{
 }
 .print-btn:hover{ opacity:.9; }
 .toolbar{
-  width:850px;
-  max-width:100%;
+  width:100%;
+  max-width:850px;
+  min-width:0;
   display:flex;
   justify-content:flex-end;
+}
+
+/* ---------- Responsive: tablets ---------- */
+@media (max-width: 700px){
+  body{ padding:24px 12px; }
+  .page{ padding:32px 28px 36px; }
+  .name{ font-size:28px; }
+  .photo-wrap{ width:90px; height:90px; }
+}
+
+/* ---------- Responsive: phones ---------- */
+@media (max-width: 480px){
+  body{ padding:16px 8px; }
+  .page{ padding:24px 16px 32px; }
+
+  .header{
+    flex-direction:column-reverse;
+    align-items:center;
+    text-align:center;
+    gap:12px;
+  }
+  .header-text{ width:100%; }
+
+  .name{ font-size:24px; letter-spacing:0.5px; }
+  .title{ font-size:12.5px; line-height:1.4; }
+
+  .contact{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    font-size:10.5px;
+  }
+  .contact span{ margin-right:0; }
+  .dot{ margin:0 5px; }
+
+  .photo-wrap{ width:84px; height:84px; }
+
+  .section-title{ font-size:11px; margin:18px 0 8px; }
+  .summary{ font-size:12.5px; }
+
+  .skills-table{ display:block; }
+  .skills-table tr{ display:block; margin-bottom:6px; }
+  .skills-table td{ display:block; padding:1px 0; }
+  .skill-label{ width:auto; font-size:12px; font-weight:700; }
+
+  ul.bullets{ padding-left:16px; }
+  ul.bullets li{ font-size:12.5px; }
+
+  .job-header{ flex-direction:column; align-items:flex-start; gap:2px; }
+  .job-org{ margin-left:0; display:block; }
+
+  .project-line{ font-size:12px; line-height:1.6; }
+
+  .toolbar{ justify-content:center; margin-bottom:10px; }
+  .print-btn{ width:100%; padding:10px 14px; font-size:13px; }
 }
