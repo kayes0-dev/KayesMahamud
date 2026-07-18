@@ -905,7 +905,7 @@ flex-wrap: nowrap;
 .footer-socials{
   display:flex;
   gap: 10px;
-  margin-left: 60px;
+  margin-left: 95px;
 }
 .footer-socials a{
   width: 36px; height:36px;
