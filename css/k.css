@@ -49,12 +49,11 @@ body{
 .print-btn:hover{ opacity:.88; }
 
 .resume{
-  width:100%;
-  max-width:860px;
-  min-width:0;
+  width:860px;
   background:var(--paper);
   box-shadow:0 10px 34px rgba(0,0,0,0.18);
   overflow:hidden;
+  transform-origin:top left;
 }
 
 /* ---------- Header ---------- */
@@ -269,27 +268,11 @@ body{
   margin-bottom:4px;
 }
 
-/* ---------- Responsive ---------- */
-@media (max-width:760px){
-  .body{ flex-direction:column; }
-  .sidebar{ width:100%; }
-}
-
-@media (max-width:520px){
-  .header{
-    flex-direction:column-reverse;
-    text-align:center;
-    padding:28px 24px;
-    gap:14px;
-  }
-  .header-text .name{ font-size:24px; letter-spacing:1px; }
-  .header-text .role{ font-size:10px; }
-  .sidebar{ padding:26px 22px 30px; }
-  .main{ padding:26px 22px 32px; }
-  .exp-item{ flex-direction:column; gap:4px; }
-  .exp-date{ width:auto; }
-  .toolbar{ justify-content:center; }
-  .print-btn{ width:100%; padding:11px 14px; }
+/* ---------- Scale-to-fit (phones show the exact desktop layout, shrunk) ---------- */
+.resume-scale-wrap{
+  width:100%;
+  max-width:860px;
+  overflow:hidden;
 }
 
 /* Print */
@@ -297,4 +280,5 @@ body{
   body{ background:#fff; padding:0; }
   .toolbar{ display:none; }
   .resume{ box-shadow:none; }
+  .resume-scale-wrap{ overflow:visible; }
 }

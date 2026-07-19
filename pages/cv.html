@@ -13,6 +13,7 @@
     <button class="print-btn" onclick="window.print()">Download / Print as PDF</button>
   </div>
 
+  <div class="resume-scale-wrap">
   <div class="resume">
 
     <!-- Header -->
@@ -131,7 +132,24 @@
     </div>
 
   </div>
+  </div>
 </div>
+
+<script>
+  function fitResume(){
+    var resume = document.querySelector('.resume');
+    var wrap = document.querySelector('.resume-scale-wrap');
+    if(!resume || !wrap) return;
+    var wrapWidth = wrap.clientWidth;
+    var naturalWidth = 860;
+    var scale = Math.min(1, wrapWidth / naturalWidth);
+    resume.style.transform = 'scale(' + scale + ')';
+    wrap.style.height = (resume.offsetHeight * scale) + 'px';
+  }
+  window.addEventListener('load', fitResume);
+  window.addEventListener('resize', fitResume);
+  document.addEventListener('DOMContentLoaded', fitResume);
+</script>
 
 </body>
 </html>
